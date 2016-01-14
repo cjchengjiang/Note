@@ -1,4 +1,4 @@
-# 代码统计
+* 代码统计 *
 ```
 git log --since="2015/1/1" --author="wangcj" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -
 ```
